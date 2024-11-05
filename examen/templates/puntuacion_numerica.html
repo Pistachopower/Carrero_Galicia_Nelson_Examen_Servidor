@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>puntuacion_numerica</title>
+</head>
+<body>
+    <h4>tengan votos con una puntuación numérica menor a 3</h4>
+    <ul>
+        {% for tabla in voto_usuario_pelicula %}
+            <li>comentario: {{ tabla.comentario }}</li>
+            <li>comentario: {{ tabla.PUNTUACION_CHOICES }}</li>
+        {% empty %}
+    <li>no hay informacion.</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
