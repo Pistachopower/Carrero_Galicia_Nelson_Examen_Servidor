@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sinVoto</title>
+</head>
+<body>
+    <ul>
+        {% for tabla in sinvoto %}
+            <li>id: {{ tabla.id }}</li>
+            <li>Nombre usuario: {{ tabla.nombre }}</li>
+            <li>Apellido usuario: {{ tabla.apellido }}</li>
+            
+
+            <hr>
+        {% empty %}
+    <li>no hay informacion.</li>
+        {% endfor %}
+    </ul>
+    
+</body>
+</html>

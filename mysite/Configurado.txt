@@ -1,8 +1,0 @@
-1- Has instalado Django
-2- Configuraste el settings.py de idioma, hora y agregaste la aplicacion 
-3- Has puesto las lineas para referenciar los modelos
-4- creamos el fichero url en la aplicacion secundaria
-5- has creado la base de datos
-5-Has hecho el debug toolbar
-7- Has creado el fichero fixture
-8- Has creado el usuario administrador

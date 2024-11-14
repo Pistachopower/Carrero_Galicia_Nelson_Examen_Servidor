@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        {% for tabla in ultimoVoto %}
+            <li>Comentario: {{ tabla.comentario }}</li>
+            <li>Puntuacion: {{ tabla.puntuacion }}</li>
+            <li>Fecha hora: {{ tabla.fechaHora }}</li>
+            <li>Nombre usuario: {{ tabla.usuario.nombre }}</li>
+        {% empty %}
+    <li>no hay informacion.</li>
+        {% endfor %}
+    </ul>
+    
+</body>
+</html>
